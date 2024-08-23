@@ -1,18 +1,19 @@
-To retrieve data from a SQL database, we need to write SELECT statements, which are often colloquially refered to as queries. A query in itself is just a statement which declares what data we are looking for, where to find it in the database, and optionally, how to transform it before it is returned.
+- To retrieve data from a SQL database, we need to write SELECT statements, which are often colloquially refered to as queries. 
+- A query in itself is just a statement which declares what data we are looking for, where to find it in the database, and optionally, how to transform it before it is returned.
 
-And given a table of data, the most basic query we could write would be one that selects for a couple columns (properties) of the table with all the rows (instances).
+- And given a table of data, the most basic query we could write would be one that selects for a couple columns (properties) of the table with all the rows (instances).
 
-# Select query for a specific columns
+### Select query for a specific columns
 SELECT column, another_column, …
 FROM mytable;
 The result of this query will be a two-dimensional set of rows and columns, effectively a copy of the table, but only with the columns that we requested.
 
-# Select query for all columns
+### Select query for all columns
 SELECT * 
 FROM mytable;
 This query, in particular, is really useful because it's a simple way to inspect a table by dumping all the data at once.
 
-# Exercise
+### Exercise
 We will be using a database with data about some of Pixar's classic movies for most of our exercises. This first exercise will only involve the Movies table, and the default query below currently shows all the properties of each movie. To continue onto the next lesson, alter the query to find the exact information we need for each task.
 
 Table: movies
@@ -33,17 +34,17 @@ id	title	          director	          year	length_minutes
 14	Monsters University	Dan Scanlon	    2013	110
 
 Find the title of each film:
-Select title from movies;
+> Select title from movies;
 
 Find the director of each film:
-SELECT director FROM movies;
+> SELECT director FROM movies;
 
 Find the title and director of each film:
-SELECT title,director FROM movies;
+> SELECT title,director FROM movies;
 
 Find the title and year of each film:
-SELECT title,year FROM movies;
+> SELECT title,year FROM movies;
 
 Find all the information about each film:
-SELECT * FROM movies;
+> SELECT * FROM movies;
 
