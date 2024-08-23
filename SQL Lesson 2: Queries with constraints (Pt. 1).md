@@ -1,13 +1,15 @@
-In order to filter certain results from being returned, we need to use a WHERE clause in the query. The clause is applied to each row of data by checking specific column values to determine whether it should be included in the results or not.
+- In order to filter certain results from being returned, we need to use a WHERE clause in the query.
+- The clause is applied to each row of data by checking specific column values to determine whether it should be included in the results or not.
 
-# Select query with constraints
-SELECT column, another_column, …
-FROM mytable
-WHERE condition
+### Select query with constraints
+> SELECT column, another_column, …
+> FROM mytable
+> WHERE condition
     AND/OR another_condition
     AND/OR …;
 
-More complex clauses can be constructed by joining numerous AND or OR logical keywords (ie. num_wheels >= 4 AND doors <= 2). And below are some useful operators that you can use for numerical data (ie. integer or floating point):
+- More complex clauses can be constructed by joining numerous AND or OR logical keywords (ie. num_wheels >= 4 AND doors <= 2).
+- And below are some useful operators that you can use for numerical data (ie. integer or floating point):
 
 Operator	            Condition	                                                SQL Example
   
@@ -22,7 +24,7 @@ IN (…)	                Number exists in a list	                               
 NOT IN (…)	            Number does not exist in a list                          	col_name NOT IN (1, 3, 5)    
 
 
-# Exercise
+### Exercise
 Using the right constraints, find the information we need from the Movies table for each task below.
 
 Table: movies
@@ -59,11 +61,11 @@ id	title	          director	          year	length_minutes
 
 
 
-### Find the movie with a row id of 6 :
-SELECT title FROM movies where id=6;
+Find the movie with a row id of 6 :
+> SELECT title FROM movies where id=6;
 
-### Find the movies released in the years between 2000 and 2010:
-select title from Movies 
+Find the movies released in the years between 2000 and 2010:
+> select title from Movies 
 where year between 2000 and 2010;
 
 ### Find the movies not released in the years between 2000 and 2010:
