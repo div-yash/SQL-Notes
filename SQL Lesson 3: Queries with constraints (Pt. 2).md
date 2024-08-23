@@ -13,10 +13,10 @@ IN (…)	String exists in a list	col_name IN ("A", "B", "C")
 NOT IN (…)	String does not exist in a list	col_name NOT IN ("D", "E", "F")
 
 
-# Exercise
+## Exercise
 Here's the definition of a query with a WHERE clause again, go ahead and try and write some queries with the operators above to limit the results to the information we need in the tasks below.
 
-# Select query with constraints:
+Select query with constraints:
 SELECT column, another_column, …
 FROM mytable
 WHERE condition
@@ -43,19 +43,19 @@ id	title	director	year	length_minutes
 87	WALL-G	Brenda Chapman	2042	9
 
 
-# Find all the Toy Story movies:
+### Find all the Toy Story movies:
 SELECT title, director FROM movies 
 WHERE title LIKE "Toy Story%";
 
-# Find all the movies directed by John Lasseter:
+### Find all the movies directed by John Lasseter:
 Select title from Movies
 where director="John Lasseter";
 
-# Find all the movies (and director) not directed by John Lasseter:
+### Find all the movies (and director) not directed by John Lasseter:
 Select title from Movies
 where director!="John Lasseter";
 
-# Find all the WALL-* movies:
+### Find all the WALL-* movies:
 Select title from Movies
 where title like "WALL-_";
 
