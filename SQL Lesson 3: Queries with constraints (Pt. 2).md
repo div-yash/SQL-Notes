@@ -1,5 +1,6 @@
 
-When writing WHERE clauses with columns containing text data, SQL supports a number of useful operators to do things like case-insensitive string comparison and wildcard pattern matching. We show a few common text-data specific operators below:
+- When writing WHERE clauses with columns containing text data, SQL supports a number of useful operators to do things like case-insensitive string comparison and wildcard pattern matching.
+- We show a few common text-data specific operators below:
 
 
 ![Queries with constraints](https://github.com/user-attachments/assets/c27c6285-5022-43b6-9aa2-555f034af2f9)
@@ -7,12 +8,12 @@ When writing WHERE clauses with columns containing text data, SQL supports a num
 ## Exercise
 Here's the definition of a query with a WHERE clause again, go ahead and try and write some queries with the operators above to limit the results to the information we need in the tasks below.
 
-Select query with constraints:
-SELECT column, another_column, …
-FROM mytable
-WHERE condition
-    AND/OR another_condition
-    AND/OR …;
+### Select query with constraints:
+> SELECT column, another_column, …
+> FROM mytable
+> WHERE condition
+> AND/OR another_condition
+> AND/OR …;
 
 
 Table: movies
@@ -34,20 +35,20 @@ id	title	director	year	length_minutes
 87	WALL-G	Brenda Chapman	2042	9
 
 
-### Find all the Toy Story movies:
-SELECT title, director FROM movies 
-WHERE title LIKE "Toy Story%";
+Find all the Toy Story movies:
+> SELECT title, director FROM movies
+> WHERE title LIKE "Toy Story%";
 
-### Find all the movies directed by John Lasseter:
-Select title from Movies
-where director="John Lasseter";
+Find all the movies directed by John Lasseter:
+> Select title from Movies
+> where director="John Lasseter";
 
-### Find all the movies (and director) not directed by John Lasseter:
-Select title from Movies
-where director!="John Lasseter";
+Find all the movies (and director) not directed by John Lasseter:
+> Select title from Movies
+> where director!="John Lasseter";
 
-### Find all the WALL-* movies:
-Select title from Movies
-where title like "WALL-_";
+Find all the WALL-* movies:
+> Select title from Movies
+> where title like "WALL-_";
 
     
