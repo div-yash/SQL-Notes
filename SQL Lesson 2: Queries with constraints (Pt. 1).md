@@ -9,7 +9,7 @@ WHERE condition
 
 More complex clauses can be constructed by joining numerous AND or OR logical keywords (ie. num_wheels >= 4 AND doors <= 2). And below are some useful operators that you can use for numerical data (ie. integer or floating point):
 
-  Operator	            Condition	                                                SQL Example
+Operator	            Condition	                                                SQL Example
   
 =, !=, <, <=, >, >=	    Standard numerical operators	                            col_name != 4
 
@@ -56,4 +56,21 @@ id	title	          director	          year	length_minutes
 13	Brave	          Brenda Chapman	    2012	102
 
 14	Monsters University	Dan Scanlon	    2013	110
+
+
+
+Find the movie with a row id of 6 :
+SELECT title FROM movies where id=6;
+
+Find the movies released in the years between 2000 and 2010
+select title from Movies 
+where year between 2000 and 2010;
+
+Find the movies not released in the years between 2000 and 2010:
+Select title from Movies 
+where Year not between 2000 and 2010;
+
+Find the first 5 Pixar movies and their release year:
+Select title, Year from movies 
+where id<=5;
 
