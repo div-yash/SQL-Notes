@@ -58,8 +58,8 @@ id	title	director	year	length_minutes
 
 
 ### List all directors of Pixar movies (alphabetically), without duplicates:
-SELECT DISTINCT director FROM movies
-ORDER BY director ASC;
+> SELECT DISTINCT director FROM movies
+> ORDER BY director ASC;
 
 
 List the last four Pixar movies released (ordered from most recent to least):
@@ -75,8 +75,8 @@ List the first five Pixar movies sorted alphabetically:
 
 
 ### List the next five Pixar movies sorted alphabetically:
-select title from movies
-order by title asc
-limit 5 offset 5;
+> select title from movies
+> order by title asc
+> limit 5 offset 5;
 
 
